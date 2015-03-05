@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+  <!-- This is a comment in the code. It's ignored by your browser when it builds the website. -->
+
+<html>
+
+  <!-- The <head> is where you store information about your website, such as information to help browsers read your website or <meta> data about the document that won't be visible to users. -->
+  <head>
+    <title>Name of your website</title>
+
+    <!-- Load your CSS stylesheet inside the <head> -->
+    <link rel="stylesheet" type="text/css" href="path-to-your-stylesheet/main.css">
+
+    <!-- For basic websites, you can also include styles directly in the <head> with a <style> tag -->
+    <style>
+      body {
+        background-color: #E1EFBB; 
+        color: #000;
+        font-family: Helvetica;
+      }
+
+      /*    Notice how this code looks different? That's because it's in CSS! Even the comments are written differently than HTML comments. */
+    </style>
+
+  </head>
+
+  <!--   Your website is built inside the <body>. This is where you create the HTML elements your users will see. -->
+  <body>
+
+    <h1>Hello world!</h1>
+    <p>This is my sample website.</p>
+
+    <button onclick="sampleFunction()">A button</button>
+
+    <!-- Load your <script> files inside the <body>. -->
+    <script type="text/javascript" src="path-to-your-script-code/main.js"></script>
+
+    <!-- Or write it directly inside a <script> tag -->
+    <script type="text/javascript">
+      function sampleFunction() {
+        alert("You clicked the button!");
+      }
+    </script>
+  </body>
+</html>

@@ -93,7 +93,7 @@
 				</section>
 
 				<section>
-					<p>Open "basic-web-structure.html" in a text editor, and it'll look like this:</p>
+					<p>If you haven't already, <a href="https://github.com/brickaa/teach-yourself-code/archive/master.zip">download the ZIP</a> for this project on Github. Open <a href="/examples/basic-web-structure.html" target="_blank">basic-web-structure.html</a> in a text editor. This is the basic structure for EVERY website. If you open <a href="/examples/basic-web-structure-comments.html" target="_blank">basic-web-structure-comments.html</a> you'll see an explanation for each of the sections.</p>
 					<pre><code><!DOCTYPE html>
 	        <html>
 	          <head>
@@ -112,19 +112,71 @@
 	          </body>
 	        </html>
 		       </code></pre>
-				</section>
-
-				<section>
 
 				</section>
 
-				<section>
+				<section data-markdown>
+					##Let's inspect the DOM
 
+					**The DOM:** The HTML parsed by a browser and turned into a website. Here's a [longer explanation](https://css-tricks.com/dom/).
 				</section>
 
-				<section>
+				<section data-markdown>
+					In a Chrome browser, open <a href="/examples/basic-web-structure-comments.html" target="_blank">basic-web-structure-comments.html</a>. Highlight "Hello World!", right-click and choose "Inspect element" to open your browser development tools.
+					
+					You can also go to "View > Developer > Developer Tools" or use the keyboard shortcut "alt+command+i" (⌥⌘I)	
+
+					Click on the tab "Elements," if it isn't already selected. Look, it's your HTML! Except, it's a bit different, because this is the DOM. This is how the browser READ your HTML. 
+				</section>
+				<section data-markdown>
+					##Interact with the DOM
+
+					You can interact with ANY website through the DOM. For example, let's change the color of "Hello World!" &mdash; Click on the h1 element. To the right, you'll see the styles the brower has already applied. Under element.style {} add the text "color: blue;" and check out your page, now "Hello World!" is blue.	
+
+					OK, now go to your favorite website, or [this](http://www.theatlantic.com/photo/2015/03/a-visit-to-aoshima-a-cat-island-in-japan/386647/) website, open the browser development tools and look around.
+
+					(Here's a [video tutorial](https://www.youtube.com/watch?v=FQKvro1Wz-E) if you're reading this online.)
 				</section>
 
+				<section data-markdown>
+					Do this:
+
+					+ Change the color of any element. 
+					+ Find a color block within the styles of an element. Click the square, and look, an eyedropper! Use that eyedropper to select a color on the page and get the hex code.
+					+ Find an element that changes on hover (like a button). Right-click that element in the dev inspector window, and click "Force Element State" > : hover. Look what happens to the styles.
+					+ Delete all the elements in the DOM. All of them. JK, delete one or two.
+					+ Now move things around. Whoa.
+				</section>
+
+				<section data-markdown>
+					**The Console:** A place to test the interactive parts of your website by interacting directly with the DOM. [Longer explanation](https://developer.chrome.com/devtools/docs/console).
+				</section>
+
+				<section data-markdown>
+					Click on the tab "Console" in your open Developer Tools window. ("View > Developer > JavaScript Console"). Type the following, then hit enter:
+
+				  	<pre><code>console.log("Hello World");</code></pre>
+
+					See how the words are printed out? 
+				</section>
+				<section data-markdown>
+					##console.log();
+
+					A debugging tool that let's you see what your code is doing. Here's a [good explanation](http://stackoverflow.com/questions/4539253/what-is-console-log) of console.log(). It also explains how to access the console in a variety of browsers and web platforms, not just Chrome.
+				</section>
+
+				<section data-markdown>
+					###You should use console.log() **ALL THE TIME**. 
+
+					Especially when you first start coding, you should use console.log() on nearly every line to double-check that your code is functioning as you expect. 
+
+					An annoying lil secret: console.log() often breaks Internet Explorer, so delete any console.log() lines before you deploy.
+				</section>
+				<section data-markdown>
+					##Let's code something together
+
+					Open [examples/index.html](examples/index.html) 
+				</section>
 			</div>
 
 		</div>
