@@ -5,30 +5,27 @@
 *[@becca_aa](https://twitter.com/becca_aa)*
 *Github: [brickaa](https://github.com/brickaa)
 
+###Goal: To give you enough tools in *one hour* to teach yourself how to code. 
 
-##First off: My goal is to give you enough tools in *one hour* to teach yourself how to code. 
-
-##It will actually take months, even years, to get good at these things. So start small, stay patient and keep pushing yourself to learn new things.
-
-
+It will actually take months, even years, to get good at these things. So start small, stay patient and keep pushing yourself to learn new things.
 
 + [Links to all the best tutorials](http://teachyourselftocode.com/)
 + [Top 10 Ways to Teach Yourself to Code](http://lifehacker.com/top-10-ways-to-teach-yourself-to-code-1684250889)
 + [Which programming language should I learn first?](http://lifehacker.com/which-programming-language-should-i-learn-first-1477153665)
 + Learn how to use Github in [15 minutes](https://try.github.io/levels/1/challenges/1)
 
+###Things to Install
 
-Things to Install
 + XCode (for Macs)
 + Homebrew (makes it easier to install things from the command line)
 + Sublime Text
-
 
 ###The Basics of a Website
 + **Servers:** Boxes in a faraway warehouse that host the data for your website and respond to requests from users. (i.e. Amazon S3)
 + **Web application frameworks:** Receive the request to access the website from the user and generate the HTML webpage. Basically, it does all the hard work.
     + Django (Python)
     + Ruby on Rails
+
 + **HTML:** The structure of your website
 + **CSS:** The visual styles (CSS ="Cascading style sheet")
 + **Javascript:** The interactive functionality
@@ -50,8 +47,6 @@ Things to Install
     
           </body>
         </html>  
-
-{basic-web-structure-comments.html}
 
 **The DOM:** The HTML parsed by a browser and turned into a website. Here's a [longer explanation](https://css-tricks.com/dom/).
 
