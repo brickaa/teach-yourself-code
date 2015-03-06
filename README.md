@@ -1,6 +1,6 @@
 
 #Teach Yourself to Code!
-##beccca aaronson
+##becca aaronson
 *[baaronson@texastribune.org](http://mailto:baaronson@texastribune.org)*
 *[@becca_aa](https://twitter.com/becca_aa)*
 *Github: [brickaa](https://github.com/brickaa)
