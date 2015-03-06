@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -64,7 +64,24 @@
 					<header>
 						<h2>Where to start</h2>
 					</header>
-					<p>It doesn't <em>really</em> matter what language you learn first. What's important is learning how to <em>think</em> like a developer. Sign up for GitHub and start browsing others' code. Learn how to maneuver around your computer on the command line, and then how to setup a Github repository. Start keeping track of your projects, however small, as you build them by committing your changes to Github.</p>
+					<p>It doesn't <em>really</em> matter what language you learn first. What's important is learning how to <em>think</em> like a developer.</p>
+
+					<p>Learning code is equivalent to learning a language. If you don't practice speaking a new language, like Spanish, and seek out novel conversations to express ideas outside of a classroom, you won't really learn it.</p>
+				</section>
+
+				<section data-markdown>
+					##Easy as pie
+
+					Coding is a like writing a recipe. Good developers write code in stages, with each step leading to the final product. They understand why each part is necessary, and exactly what order they must occur in to get the job done right.
+				</section>
+				<section data-markdown>
+					##Where to start
+
+					+ Do online tutorials. Do them again.
+					+ Sign up for GitHub and start browsing others' code. 
+					+ Start maneuvering around your computer on the command line, opening/making files.
+					+ Figure out how to setup a Github repository. 
+					+ Start keeping track of your projects, however small, as you build them by committing your changes to Github.</p>
 				</section>
 				<section>
 					<header>
@@ -78,10 +95,19 @@
 						<li><a href="http://lifehacker.com/which-programming-language-should-i-learn-first-1477153665">Which programming language should I learn first?</a></li>
 					</ul>
 				</section>
+
+				<section data-markdown>
+					##Always be GOOGLING
+
+					+ [Stack Overflow](http://stackoverflow.com/): Best place to find answers on why your code isn't working. Note the rating system on users' answers/responses. Don't be afraid to post a question.
+					+ [CSS-Tricks](https://css-tricks.com/): Every tutorial you could possibly want on CSS/Sass. Great [examples](https://css-tricks.com/snippets/html/) of how to properly format HTML, CSS &amp; Javascript.
+					+ [Codepen](http://codepen.io/): Share and edit open sourced CSS/Sass. Lots of animation examples.
+				</section>
+
 				<section>
 					<h2>Set up your computer</h2>
 					<p>
-						Assuming you're on a Mac, which is all I'm qualified to teach you on, you'll need to have a text editor. Recommended: <a href="http://www.sublimetext.com/3">Sublime Text 3</a> or <a href="https://atom.io/">Atom</a>. Your computer will also tell you to download XCode.
+						Assuming you're on a Mac, which is all I'm qualified to teach you on, you'll need a text editor. Recommended: <a href="http://www.sublimetext.com/3">Sublime Text 3</a> or <a href="https://atom.io/">Atom</a>. Eventually, you will also tell you to download XCode, and once you start using the Terminal, install Homebrew to make it easier to install other things.
 					</p>
 				</section>
 
@@ -92,26 +118,46 @@
 					+ **Javascript:** The interactive functionality
 				</section>
 
+				<section data-markdown>
+					###Web Frameworks
+					For large websites, web frameworks do the heavy lifting &mdash; like send/receive user requests to a database.
+
+					+ Python / [Django](https://www.djangoproject.com/)
+					+ Ruby / [Ruby on Rails](http://rubyonrails.org/)
+
+				</section>
+
+				<section data-markdown>
+					###Front-end Frameworks
+					Front-end frameworks are also a great place to find example code, because they're built to be reusable and adaptable. 
+
+					+ [Bootstrap](http://getbootstrap.com/)
+					+ [Foundation](http://foundation.zurb.com/)
+					+ [Bourbon](http://bourbon.io/)
+
+				</section>
+
 				<section>
-					<p>If you haven't already, <a href="https://github.com/brickaa/teach-yourself-code/archive/master.zip">download the ZIP</a> for this project on Github. Open <a href="/examples/basic-web-structure.html" target="_blank">basic-web-structure.html</a> in a text editor. This is the basic structure for EVERY website. If you open <a href="/examples/basic-web-structure-comments.html" target="_blank">basic-web-structure-comments.html</a> you'll see an explanation for each of the sections.</p>
-					<pre><code><!DOCTYPE html>
-	        <html>
-	          <head>
-	            <title>Name of your website</title>
-	    
-	            <!-- Load stylesheet -->
-	            <link rel="stylesheet" type="text/css" href="/path-to-your-stylesheet/main.css">
-	          </head>
-	    
-	          <body>
-	            <h1>Hello world!</h1>
-	    
-	            <!-- Load script -->
-	            <script type="text/javascript" src="/path-to-your-script-code/main.js"></script>
-	    
-	          </body>
-	        </html>
-		       </code></pre>
+					<p>If you haven't already, <a href="https://github.com/brickaa/teach-yourself-code/archive/master.zip">download the ZIP</a> for this project on Github. Open <a href="/examples/basic-web-structure.html" target="_blank">basic-web-structure.html</a> in a text editor. This is the basic structure for every website. If you open <a href="/examples/basic-web-structure-comments.html" target="_blank">basic-web-structure-comments.html</a> you'll see an explanation for each of the sections.</p>
+<pre><code>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Name of your website</title>
+
+    <!-- Load stylesheet -->
+    <link rel="stylesheet" type="text/css" href="/path-to-your-stylesheet/main.css">
+  </head>
+
+  <body>
+    <h1>Hello world!</h1>
+
+    <!-- Load script -->
+    <script type="text/javascript" src="/path-to-your-script-code/main.js"></script>
+
+  </body>
+</html>
+ </code></pre>
 
 				</section>
 
@@ -149,6 +195,12 @@
 				</section>
 
 				<section data-markdown>
+					###Device testing
+
+					Chrome and Firefox both have tools to test what your website will look like on various devices. In Chrome, click the button in the top left of the "Development Tools" window that looks like a tablet. Select the type of device you want to test, and reload.
+				</section>
+
+				<section data-markdown>
 					**The Console:** A place to test the interactive parts of your website by interacting directly with the DOM. [Longer explanation](https://developer.chrome.com/devtools/docs/console).
 				</section>
 
@@ -172,10 +224,45 @@
 
 					An annoying lil secret: console.log() often breaks Internet Explorer, so delete any console.log() lines before you deploy.
 				</section>
+
+				<section data-markdown>
+					##Google Charts
+
+					Google charts has many wonderful [code examples](https://developers.google.com/chart/interactive/docs/gallery/barchart), and step-by-step instructions on how to change up the code to make it work for you.
+				</section>
+
 				<section data-markdown>
 					##Let's code something together
 
-					Open [examples/index.html](examples/index.html) 
+					Open [examples/index.html](examples/index.html). We're going to use Google Charts to build a pie chart. 
+
+					Go [here](https://developers.google.com/chart/interactive/docs/basic_load_libs) and copy/paste that first block of code into index.html
+				</section>
+
+				<section data-markdown>
+					###Don't be afraid of the Terminal!
+
+					If you're scared of the big black box, make it pretty. Go to Terminal > Preferences > Profiles and change the color scheme. You can import new color schemes, like [this](http://ethanschoonover.com/solarized).			
+				</section>
+				<section data-markdown>
+					###Proof the terminal isn't scary
+
+					Type the following into your terminal. (If you haven't downloaded XCode, it won't work.)
+					<pre><code>
+						python
+					</code></pre>
+
+					Congrats, you've connected the python library.
+				</section>
+				<section data-markdown>
+					 Now type (>>> is already there, you don't type that part):
+					<pre><code>
+						>>> print "Hello world!"
+					</code></pre>
+				</section>
+
+				<section>
+					Ok, so what if you pull down an example from GitHub, open the page in your browser and it doesn't work? The project probably needs a server to compile the styles, scripts, and other components. 
 				</section>
 			</div>
 
