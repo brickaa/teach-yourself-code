@@ -49,6 +49,8 @@ For large websites, web frameworks do the heavy lifting &mdash; like send/receiv
 + Python / [Django](https://www.djangoproject.com/)
 + Ruby / [Ruby on Rails](http://rubyonrails.org/)
 
+FYI: Python and Ruby aren't "web" languages &mdash; you can write all kinds of code with these languages. BUT other people have used these languages to build web frameworks that make building dynamic websites much easier.
+
 ###Front-end Frameworks
 Front-end frameworks are also a great place to find example code, because they're built to be reusable and adaptable. 
 
@@ -58,7 +60,7 @@ Front-end frameworks are also a great place to find example code, because they'r
 
 **The DOM:** The HTML parsed by a browser and turned into a website. Here's a [longer explanation](https://css-tricks.com/dom/).
 
-##Let's inspect the DOM
+###Let's inspect the DOM
 
 In a Chrome browser, open <a href="/examples/basic-web-structure-comments.html" target="_blank">basic-web-structure-comments.html</a>. Highlight "Hello World!", right-click and choose "Inspect element" to open your browser development tools.
 
@@ -66,7 +68,7 @@ You can also go to "View > Developer > Developer Tools" or use the keyboard shor
 
 Click on the tab "Elements," if it isn't already selected. Look, it's your HTML! Except, it's a bit different, because this is the DOM. This is how the browser READ your HTML. 
 
-##Interact with the DOM
+###Interact with the DOM
 
 You can interact with ANY website through the DOM. For example, let's change the color of "Hello World!" &mdash; Click on the h1 element. To the right, you'll see the styles the brower has already applied. Under element.style {} add the text "color: blue;" and check out your page, now "Hello World!" is blue. 
 
@@ -100,11 +102,11 @@ You should use console.log() **ALL THE TIME**. Especially when you first start c
 
 An annoying lil secret: console.log() often breaks Internet Explorer. Remember to delete any console.log() left in your script before you deploy your website.
 
-##Google Charts
+###Google Charts
 
 Google charts has many wonderful [code examples](https://developers.google.com/chart/interactive/docs/gallery/barchart), and step-by-step instructions on how to change up the code to make it work for you.
 
-##Let's code something together
+###Let's code something together
 
 Open [examples/index.html](examples/index.html). We're going to use Google Charts to build a pie chart. 
 
