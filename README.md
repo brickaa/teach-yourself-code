@@ -20,13 +20,7 @@ It will actually take months, even years, to get good at these things. So start 
 + Homebrew (makes it easier to install things from the command line)
 + Sublime Text
 
-###The Basics of a Website
-+ **Servers:** Boxes in a faraway warehouse that host the data for your website and respond to requests from users. (i.e. Amazon S3)
-+ **Web application frameworks:** Receive the request to access the website from the user and generate the HTML webpage. Basically, it does all the hard work.
-    + Django (Python)
-    + Ruby on Rails
-
-###The Basics of a Website
+###The Basics
 + **HTML:** The structure of your website
 + **CSS:** The visual styles (CSS ="Cascading style sheet")
 + **Javascript:** The interactive functionality
